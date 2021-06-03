@@ -18,7 +18,7 @@ for (let i = 0; i < json.length; i++) {
 
         let stat = new Map();
         stat["file"] = asset.name;
-        stat["tag"] = release.tag;
+        stat["tag"] = release.tag_name;
         stat["release"] = release.name;
         stat["download_count"] = asset.download_count;
 
