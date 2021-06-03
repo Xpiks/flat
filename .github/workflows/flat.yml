@@ -27,4 +27,4 @@ jobs:
         with:
           http_url: https://api.github.com/repos/Xpiks/app/releases
           downloaded_filename: data-raw.json
-          postprocess: postprocess.ts
+          postprocess: postprocess.js
