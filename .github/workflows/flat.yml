@@ -2,8 +2,9 @@ name: Flat
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - .github/workflows/flat.yml # Only run a new workflow every time this file (flat.yaml) file changes
+      - postprocess.ts
   workflow_dispatch:
   schedule:
     - cron: '0 0 */2 * *'
