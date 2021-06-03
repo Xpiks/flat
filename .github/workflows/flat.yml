@@ -7,7 +7,7 @@ on:
       - postprocess.ts
   workflow_dispatch:
   schedule:
-    - cron: '0 0 */2 * *'
+    - cron: '0 0 * * *'
 
 jobs:
   scheduled:
@@ -26,5 +26,5 @@ jobs:
         uses: githubocto/flat@v3
         with:
           http_url: https://api.github.com/repos/Xpiks/app/releases
-          downloaded_filename: data.json
+          downloaded_filename: data-raw.json
           postprocess: postprocess.ts
