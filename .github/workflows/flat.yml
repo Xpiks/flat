@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - .github/workflows/flat.yml # Only run a new workflow every time this file (flat.yaml) file changes
-      - postprocess.ts
+      - postprocess.js
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
